@@ -193,6 +193,10 @@ Error message and password prompt
 
 <li>$:/config/AnimationDuration</li>
 
+<li>$:/config/AutoSave</li>
+
+<li>$:/config/DownloadSaver/AutoSave</li>
+
 <li>$:/config/EditorTypeMappings/text/vnd.tiddlywiki</li>
 
 <li>$:/config/Navigation/openLinkFromInsideRiver</li>
@@ -753,8 +757,6 @@ Error message and password prompt
 
 <li>Island Life private view</li>
 
-<li>Jack Halberstam</li>
-
 <li>Jade Montserrat</li>
 
 <li>Joon-Lynn Goh</li>
@@ -780,6 +782,8 @@ Error message and password prompt
 <li>Learning Nonhuman</li>
 
 <li>legal aesthetics</li>
+
+<li>MAIA group</li>
 
 <li>materiality</li>
 
@@ -1414,6 +1418,12 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 </div>
 <div created="20200418161856892" modified="20200808143302000" title="$:/config/AnimationDuration">
 <pre>400</pre>
+</div>
+<div created="20220627120059791" modified="20220627120111121" title="$:/config/AutoSave">
+<pre>yes</pre>
+</div>
+<div created="20220627120118281" modified="20220627120124337" title="$:/config/DownloadSaver/AutoSave">
+<pre>no</pre>
 </div>
 <div bag="default" created="20191215203357897" modified="20200603122108780" revision="0" tags="$:/giffmex/stroll" title="$:/config/EditorTypeMappings/text/vnd.tiddlywiki" type="text/vnd.tiddlywiki">
 <pre>comptext</pre>
@@ -13367,22 +13377,22 @@ exports.context = contextWidget;
 <div created="20210927072623264" modified="20210927072642624" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20210925061535835" modified="20220208162044597" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210925061535835" modified="20220627120021849" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20210925061539666" modified="20210925061539666" title="$:/state/tab-2065006209">
+<div created="20210925061539666" modified="20220627120128202" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20211028130527432" modified="20211028151842837" title="$:/state/tab/search-results/sidebar">
 <pre>$:/core/ui/DefaultSearchResultList</pre>
 </div>
-<div created="20210925062958213" modified="20220622082008951" title="$:/state/tab/sidebar--595412856">
+<div created="20210925062958213" modified="20220627120308719" title="$:/state/tab/sidebar--595412856">
 <pre>TableOfContents</pre>
 </div>
 <div created="20210926054610913" modified="20210926054619642" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
-<div created="20211209081213628" modified="20220616125631611" title="$:/state/toc/TableOfContents-About--118161433">
+<div created="20211209081213628" modified="20220627122041592" title="$:/state/toc/TableOfContents-About--118161433">
 <pre>close</pre>
 </div>
 <div created="20220513071259660" modified="20220622185057471" title="$:/state/toc/TableOfContents-Artistic Practice--118161433">
@@ -13478,7 +13488,7 @@ exports.context = contextWidget;
 <div created="20211214093344462" modified="20220218073124706" title="$:/state/toc/TableOfContents/About-CV--118161433">
 <pre>open</pre>
 </div>
-<div created="20220613085715978" modified="20220614112826708" title="$:/state/toc/TableOfContents/About-My Cloud--118161433">
+<div created="20220613085715978" modified="20220627122040694" title="$:/state/toc/TableOfContents/About-My Cloud--118161433">
 <pre>close</pre>
 </div>
 <div created="20211214093659779" modified="20211214093659779" title="$:/state/toc/TableOfContents/About/CV-Projects by type--118161433">
@@ -13691,7 +13701,7 @@ exports.context = contextWidget;
 <div bag="default" revision="1" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20220622183337564" list="[[2022-06-21 Mission Vision Values]] Hello [[Current Work]]" modified="20220622183337564" title="$:/StoryList">
+<div created="20220627115226245" list="Hello [[Current Work]]" modified="20220627120019539" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200519141000553" list="$:/.giffmex/Buttons/more-tiddler-edit-actions $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200521145647980" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/tags/EditToolbar">
@@ -14952,8 +14962,7 @@ An evaluation of the Artists Leaks data.
 <pre></pre>
 </div>
 <div created="20220622061240917" modified="20220622073940540" tags="[[trustee resources]] governance" title="governance culture">
-<pre>
-''From the non-profit perspective: ''
+<pre>''From the non-profit perspective: ''
 
 * Ontario Nonprofit Network's [[How governance culture is shaping your decision-making|https://theonn.ca/how-governance-culture-is-shaping-your-decision-making/]]
 * The Global Fund's [[Governance Culture Initiative|https://www.theglobalfund.org/media/9741/bm43_07-governanceculture_paper_en.pdf]] recommendations.
@@ -15340,26 +15349,6 @@ For more information please visit https://www.wiltshirecreative.co.uk/whats-on/f
 [img[https://github.com/jackkytan/websiteimages/blob/master/Island%20Life%20PV%20-%20kitchen%20table.jpg?raw=true]]
 </pre>
 </div>
-<div created="20210929041007058" modified="20211203103201775" tags="[[People who haunt me]]" title="Jack Halberstam">
-<pre>[img[https://upload.wikimedia.org/wikipedia/commons/5/51/Jack_Halberstam_03.jpg]]
-https://en.wikipedia.org/wiki/Jack_Halberstam
-
-In 2013, I attended [[a conference at Tate Modern on gender|https://www.tate.org.uk/whats-on/tate-modern/charming-revolution-congress-gender-talents-and-wildness/gender-talents-special]] where Jack Halberstam, Paul Preciado and others spoke. It was the first time I saw institutional critique in action where speakers exposed the workings and machinations of the event itself and how it was produced by the Tate, e.g., the speakers' low fee, their objectification, the appropriation of their radicalism for the institution, etc.
-
-I remember Jack talking about wildness and the animated movie //Fantastic Mr Fox// and how wildness is a space of alterity and adventure where new politics and new worldings can happen. Halberstam writes about the conference in [[an article for e-flux|https://www.e-flux.com/journal/44/60142/charming-for-the-revolution-a-gaga-manifesto/]]:
-
-
-&lt;&lt;&lt;
-We learn many things in Fantastic Mr. Fox about being charming, being fantastic, and creating revolt. But the best and most poignant scene comes in the form of a quiet encounter with the wild at the end of the film. In this scene, Mr. Fox is on his way home after escaping from the farmers once again. As he and his merry band of creatures turn the corner on their motorbike with sidecar, they come upon a spectral figure loping into their path. Mr. Fox pulls up and they all stand in awe. They watch as a lone wolf turns and stares back at them. Mr. Fox, ever the diplomat, declares his phobia of wolves and yet tries to communicate with the wolf in three languages. When nothing works, he tries gestures. With tears in his eyes, Mr. Fox raises a fist to the wolf on the hill and stares transfixed as the wolf understands the universal sign of solidarity and raises his own fist in response, before drifting off into the forest. This exchange, silent and profound, brings tears to Mr. Fox’s eyes precisely because it puts him face to face with the wildness he fears and the wildness he harbors within himself.
-
-Whether you see the scene as corny or contrived, odd or predictable, generic or fetishistic, you know that you have witnessed a moment that Deleuze might call “pure cinema.” This scene, in other words, draws us into the charisma of the image; it speaks a visual grammar that cannot be reduced to the plot and it enacts a revolutionary instance that we, like Mr. Fox, cannot put into words. And because we are confronted with the possibility of a life beyond the limits of our comprehension, because we see the very edge of the framing of knowing and seeing, and because we see Mr. Fox reaching for something just out of reach, we, like him, are changed by the chance encounter.
-
-The wild here is a space that opens up when we step outside of the conventional realms of political action and confront our fears; it rhymes with Muñoz’s sense of queer utopia and manifests what Fred Moten and Stefano Harney call the power of the “the undercommons.” The wild and the fantastic enter the frame of visibility in the form of an encounter between the semi-domesticated and the unknown, speech and silence, motion and stillness. Ultimately, the revolutionary is a wild space where temporality is uncertain, relation is improvised, and futurity is on hold. Into this “any instant whatsoever” (Deleuze) walks a figure that we cannot classify, that refuses to engage us in conventional terms, but speaks instead in the gestural language of solidarity, connection, and insurrection.
-&lt;&lt;&lt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ELqdLvz60zA&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-</pre>
-</div>
 <div created="20220513092956641" modified="20220513101602446" tags="" title="Jade Montserrat">
 <pre></pre>
 </div>
@@ -15536,7 +15525,7 @@ Marissa -v- Tom (see above), a couples dispute (11 June 2016, Karaoke Court Hack
 
 </pre>
 </div>
-<div created="20170801104103452" modified="20211209080153326" tags="[[People who haunt me]]" title="Karen Barad">
+<div created="20170801104103452" modified="20220627115348978" tags="[[My Cloud]]" title="Karen Barad">
 <pre>[img[https://egs.edu/wp-content/uploads/2019/08/karen-barad.jpg]]
 
 [[Wikipedia profile|https://en.wikipedia.org/wiki/Karen_Barad]]
@@ -15681,6 +15670,46 @@ Go to the FACT website to see the work: https://www.fact.co.uk/learning-non-huma
 </div>
 <div created="20211028190202349" modified="20220514072504168" tags="Concepts" title="legal aesthetics">
 <pre></pre>
+</div>
+<div created="20220627120630879" modified="20220627122020873" tags="[[My Cloud]]" title="MAIA group">
+<pre>[img[https://dluxe-magazine.co.uk/wp-content/uploads/2020/09/YARD-opening-at-Port-Loop_Photo-Two.jpg]]
+
+!!Learning from MAIA (and founder Amahra Spence)
+
+From MAIA's website https://www.maiagroup.co/:
+
+
+&lt;&lt;&lt;
+MAIA is an artist-led social justice organisation, working worldwide, based in our home city, Birmingham, UK. 
+
+Our work asks what it takes to move from imagination to liberation, through the creation of spaces, programmes and resources, where imagination and culture are starting points.
+
+We work with other artists, who are well versed in imagining beyond our current paradigm to co-dream and manifest spaces [Sites of Imagination], community programmes [Culture for Liberation] and resources [Resourcing the Movement] that grow the capacity for more people to consider themselves ‘artists’ and challenge the systems and structures around us. 
+
+This means we centre the experiences, practices and imaginations of Black artists, particularly those who are impacted by intersecting forms of oppression.
+
+“The function of art is to do more than tell it like it is - it is to imagine what is possible”— BELL HOOKS
+&lt;&lt;&lt;
+
+!!I am learning about
+
+* Moving from criticism and deconstructing institutions or society into manifesting the world that I want to see.
+* Radical empathy.
+* Radical hope.
+* Black radical administration.
+* That 'the art world' ain't all that; and that we can carve out our own art worlds.
+
+!!MAIA Group's resources
+
+Eventbrite page of past and upcoming events: https://allevents.in/org/maia-group/2010988?ref=organizer-ep-v4
+
+Youtube page: https://www.youtube.com/channel/UCAh51iPAU3bw-Q9qXWUxCVw/videos
+
+Twitter page: https://twitter.com/MAIA_Group
+
+Amahra Spence on radical imagination: https://hurryslowly.co/408-amahra-spence/
+
+</pre>
 </div>
 <div created="20211029073532521" modified="20220514072504168" tags="Concepts" title="materiality">
 <pre></pre>
@@ -16082,7 +16111,7 @@ All residencies should be calculated on a pro-rata basis where the residency is 
 
 </pre>
 </div>
-<div created="20211209075230887" modified="20211209075947326" tags="[[People who haunt me]]" title="Ratna Lachman">
+<div created="20211209075230887" modified="20220627115401675" tags="[[My Cloud]]" title="Ratna Lachman">
 <pre>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kGXpz-o7hSc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
 Ratna Lachman, born in Singapore, was a civil rights leader based in Yorkshire. Art lover and trained journalist, Ratna campaigned tirelessly and advocated for ethnic minority rights in Britain. She was particularly vocal about the human rights abuses that arose out of the UK Government's counter-terrorism PREVENT policy that disproportionately discriminated against British muslims. Ratna was the Director of JUST, a Bradford based equalities charity, and she died of cancer in 2017 at the age of 60.
@@ -16320,14 +16349,14 @@ The Q1 roleplay will end in a short exhibition where you and LAS staff, audience
 
 [[Download the full Call for Participants here|https://github.com/jackkytan/websiteimages/raw/master/RPG%20Longsight%20-%20Q1%20Participant%20EOI.pdf]]</pre>
 </div>
-<div created="20220621135743924" modified="20220621151417084" tags="[[RPG Longsight (Foundation CIO)]]" title="RPG Longsight Mission Vision Values">
+<div created="20220621135743924" modified="20220623172547051" tags="[[RPG Longsight (Foundation CIO)]]" title="RPG Longsight Mission Vision Values">
 <pre>!!Q1: Workshop 1
 Saturday 25 June 2022, 12-3pm
 
 |12:00|Arrival and hellos|all|
-|12:20|Introducing each other|all|
-|12:40|A briefing about RPG Longsight and Q1: Foundation CIO model|Chris/Chi/Jack|
-|1:00|Presentation from Directors of Longsight Arts Space|Chi/Chris|
+|12:10|Introducing each other|all|
+|12:20|A briefing about RPG Longsight and Q1: Foundation CIO model|Chris/Chi/Jack|
+|12:40|Presentation from Directors of Longsight Arts Space|Chi/Chris|
 |1:15|Lunch|all|
 |1:45|Discussion about LAS' Mission, Vision and Values|Jack|
 |2:15|Discussion about Trustee's terms of reference and recruitment|Jack|
